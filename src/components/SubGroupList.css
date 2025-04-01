@@ -1,0 +1,27 @@
+/* This CSS file styles the SubGroupList component, which displays a list of subgroups.
+ * It includes styles for the container, individual subgroup cards, and hover effects.
+ */
+.subgroup-list {
+    display: flex;
+    flex-direction: column;     /* 🔁 Stack vertically */
+    align-items: center;        /* 🔹 Center items horizontally */
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.subgroup-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    min-width: 160px;
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+.subgroup-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }

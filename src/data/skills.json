@@ -33,7 +33,8 @@
       "children": [
         { "title": "ISO 27000" },
         { "title": "Säker applikationscykel" },
-        { "title": "Penetrationstest" }
+        { "title": "Penetrationstest" },
+        { "title": "Informationssäkerhetskultur" }
       ]
     },
     {

@@ -1,3 +1,4 @@
+// src/components/MainCard.tsx
 import { motion } from "framer-motion";
 import "./MainCard.css";
 

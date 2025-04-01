@@ -1,3 +1,6 @@
+/*  This file contains the CSS styles for the App component. 
+   It includes styles for the root element, body, and various classes used in the component. */
+   
 html, body {
   margin: 0;
   padding: 0;
@@ -40,4 +43,3 @@ h1 {
 .card-container.selected {
   padding-top: 1vh;
 }
-
