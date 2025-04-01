@@ -7,7 +7,13 @@
           "children": [
             { "title": "React" },
             { "title": "TypeScript" },
-            { "title": "CSS / Tailwind" }
+            {
+              "title": "CSS",
+              "children": [
+                { "title": "Tailwind" },
+                { "title": "Flexbox & Grid" }
+              ]
+            }
           ]
         },
         {
@@ -31,16 +37,34 @@
     {
       "title": "Informationssäkerhet",
       "children": [
-        { "title": "ISO 27000" },
-        { "title": "Säker applikationscykel" },
-        { "title": "Penetrationstest" },
-        { "title": "Informationssäkerhetskultur" }
+        { "title": "ISO 27000",
+        "children": [
+          { "title": "ISO 27001" },
+          { "title": "ISO 27002" },
+          { "title": "ISO 27005" }
+        ]},
+        {
+          "title": "Säker applikationscykel",
+          "children": [
+            { "title": "SAST" },
+            { "title": "SCA" },
+            { "title": "CI/CD security" },
+            { "title": "Något mer" }
+          ]
+        },
+        { "title": "Penetrationstest" }
       ]
     },
     {
       "title": "Projektledning",
       "children": [
-        { "title": "Scrum & Kanban" },
+        {
+          "title": "Scrum & Kanban",
+          "children": [
+            { "title": "Jira" },
+            { "title": "Sprint Planning" }
+          ]
+        },
         { "title": "Förändringsledning" },
         { "title": "E-learningplattformar" }
       ]
@@ -48,7 +72,13 @@
     {
       "title": "Media & kommunikation",
       "children": [
-        { "title": "Video- & ljudproduktion" },
+        {
+          "title": "Video- & ljudproduktion",
+          "children": [
+            { "title": "Adobe Premiere" },
+            { "title": "Cubase" }
+          ]
+        },
         { "title": "3D-modellering" },
         { "title": "AI-genererad media" }
       ]

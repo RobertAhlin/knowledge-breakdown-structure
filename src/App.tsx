@@ -3,7 +3,7 @@ import { useState } from "react";
 import MainCard from "./components/MainCard";
 import "./App.css";
 import skills from './data/skills.json';
-import SubGroupList from "./components/SubGroupList";
+import RecursiveGroup from "./components/RecursiveGroup";
 
 function App() {
   const [selected, setSelected] = useState<string | null>(null);
@@ -26,8 +26,8 @@ function App() {
         ))}
       </div>
 
-      {selectedGroup && selectedGroup.children && (
-        <SubGroupList groups={selectedGroup.children} />
+      {selectedGroup?.children && (
+        <RecursiveGroup groups={selectedGroup.children} />
       )}
     </div>
   );

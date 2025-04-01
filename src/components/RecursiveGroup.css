@@ -1,0 +1,39 @@
+/* RecursiveGroup.css */
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .group-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .group-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+    min-width: 160px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: fit-content;
+  }
+  
+  .group-card.selected {
+    background-color: #e0f7fa;
+    font-weight: bold;
+  }
+  
+  .child-wrapper {
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+  }
+  
