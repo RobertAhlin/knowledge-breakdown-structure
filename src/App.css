@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 15vh;
+  transition: padding-top 0.5s ease;
+}
+
+.app.selected {
+  padding-top: 1vh;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 15vh;
+  transition: padding-top 0.5s ease;
+}
+
+.card-container.selected {
+  padding-top: 1vh;
+}
+

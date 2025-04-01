@@ -1,0 +1,56 @@
+[
+    {
+      "title": "Teknisk kompetens",
+      "children": [
+        {
+          "title": "Frontend",
+          "children": [
+            { "title": "React" },
+            { "title": "TypeScript" },
+            { "title": "CSS / Tailwind" }
+          ]
+        },
+        {
+          "title": "Backend",
+          "children": [
+            { "title": "Node.js" },
+            { "title": "Express" },
+            { "title": "Prisma" }
+          ]
+        },
+        {
+          "title": "Databaser",
+          "children": [
+            { "title": "PostgreSQL" },
+            { "title": "Firebase" },
+            { "title": "Redis" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Informationssäkerhet",
+      "children": [
+        { "title": "ISO 27000" },
+        { "title": "Säker applikationscykel" },
+        { "title": "Penetrationstest" }
+      ]
+    },
+    {
+      "title": "Projektledning",
+      "children": [
+        { "title": "Scrum & Kanban" },
+        { "title": "Förändringsledning" },
+        { "title": "E-learningplattformar" }
+      ]
+    },
+    {
+      "title": "Media & kommunikation",
+      "children": [
+        { "title": "Video- & ljudproduktion" },
+        { "title": "3D-modellering" },
+        { "title": "AI-genererad media" }
+      ]
+    }
+  ]
+  
