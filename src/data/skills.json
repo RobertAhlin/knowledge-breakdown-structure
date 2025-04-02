@@ -52,7 +52,12 @@
                 "info": [
                 { "text": "LinkedIn Learning - Learning Docker" },
                 { "text": "Företagsuniversitetet Fullstack utveckling - Backend" }
-                ] }
+                ] },
+            { "title": "Python",
+                "info": [
+                { "text": "LinkedIn Learning - Python Essential Training" },
+                { "text": "Code Institute - AI/ML with Python" }
+                ] }    
           ]
         },
         {

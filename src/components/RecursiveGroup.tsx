@@ -15,9 +15,11 @@ type Group = {
 
 type Props = {
   groups: Group[];
+  animateFirstLevel?: boolean;
+  level?: number;
 };
 
-export default function RecursiveGroup({ groups }: Props) {
+export default function RecursiveGroup({ groups, animateFirstLevel = false, level = 0 }: Props) {
   const [selected, setSelected] = useState<string | null>(null);
   const [modalContent, setModalContent] = useState<Info[] | null>(null);
 
@@ -38,15 +40,19 @@ export default function RecursiveGroup({ groups }: Props) {
         return (
           <div key={group.title} className="group-block">
             <div
-              className={`group-card ${isSelected ? "selected" : ""}`}
-              onClick={handleClick}
-            >
-              {group.title}
+                className={`group-card 
+                    ${isSelected ? "selected" : ""} 
+                    ${level === 1 && animateFirstLevel ? "fly-in" : ""}
+                    ${level >= 2 ? "fade-in" : ""}`
+                }
+                onClick={handleClick}
+                >
+                {group.title}
             </div>
 
             {!hasInfo && isSelected && group.children && (
               <div className="child-wrapper">
-                <RecursiveGroup groups={group.children} />
+                <RecursiveGroup groups={group.children} level={level + 1} />
               </div>
             )}
           </div>
@@ -59,7 +65,6 @@ export default function RecursiveGroup({ groups }: Props) {
             <button className="close-button" onClick={() => setModalContent(null)}>
               &times;
             </button>
-            <h3>Info</h3>
             <ul>
               {modalContent.map((item, index) => (
                 <li key={index}>{item.text}</li>

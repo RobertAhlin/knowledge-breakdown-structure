@@ -14,9 +14,13 @@
   }
   
   .group-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(145deg, #4f7192, #7899b9);
+    background-blend-mode: overlay;
+    color: #fff;
+    border: 3px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.2), 0 4px 10px rgba(0,0,0,0.3);
+    border-radius: 20px 5px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.9);
     padding: 1rem 1.5rem;
     min-width: 160px;
     text-align: center;
@@ -24,16 +28,32 @@
     cursor: pointer;
     transition: all 0.3s ease;
     width: fit-content;
+    transform: none;
   }
   
   .group-card.selected {
-    background-color: #cbe1ff;
+    background: linear-gradient(145deg, #0e141a, #7899b9);
+    background-blend-mode: overlay;
+    color: #fff;
+    border: 3px solid #a0a0a1;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.9);
     font-weight: bold;
   }
   
+  .group-card:hover {
+    transform: scale(1.03);
+    box-shadow: 2px 4px 20px rgba(119, 216, 233, 0.8), 2px 4px 20px rgba(25, 129, 226, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-color: rgb(58, 171, 247);
+  }
+  .group-card.selected:hover {
+    transform: none;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.9); /* samma som default */
+  }
+
   .child-wrapper {
     margin-top: 0.5rem;
-    margin-left: -0.5rem;
+    margin-left: -10rem;
   }
   
   .modal-overlay {
@@ -47,11 +67,14 @@
   }
   
   .modal {
-    background: white;
+    background: linear-gradient(145deg, #033669, #4b5e70);
+    background-blend-mode: overlay;
+    color: #fff;
+    border: 4px solid #8d9ea8;
     padding: 1rem;
     border-radius: 30px 10px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.75);
-    max-width: 600px;
+    box-shadow: 2px 8px 16px rgba(22, 72, 119, 0.74);
+    max-width: 50%;
     width: 90%;
     position: relative;
   }
@@ -64,4 +87,34 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    color: #fff;
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .fly-in {
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: flyInTop 0.5s ease forwards;
+  }
+  
+  @keyframes flyInTop {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }

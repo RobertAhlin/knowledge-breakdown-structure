@@ -4,6 +4,8 @@ import MainCard from "./components/MainCard";
 import "./App.css";
 import skills from './data/skills.json';
 import RecursiveGroup from "./components/RecursiveGroup";
+import { Group } from "./types";
+
 
 function App() {
   const [selected, setSelected] = useState<string | null>(null);
@@ -27,7 +29,7 @@ function App() {
       </div>
 
       {selectedGroup?.children && (
-        <RecursiveGroup groups={selectedGroup.children} />
+        <RecursiveGroup groups={selectedGroup.children as Group[]} animateFirstLevel={true} level={1} />
       )}
     </div>
   );
