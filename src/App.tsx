@@ -2,10 +2,11 @@
 import { useState } from "react";
 import MainCard from "./components/MainCard";
 import "./App.css";
-import skills from './data/skills.json';
+import rawSkills from './data/skills.json';
+import { SkillNode } from './types';
 import RecursiveGroup from "./components/RecursiveGroup";
-import { Group } from "./types";
 
+const skills: SkillNode[] = rawSkills;
 
 function App() {
   const [selected, setSelected] = useState<string | null>(null);
@@ -29,7 +30,11 @@ function App() {
       </div>
 
       {selectedGroup?.children && (
-        <RecursiveGroup groups={selectedGroup.children as Group[]} animateFirstLevel={true} level={1} />
+        <RecursiveGroup
+          groups={selectedGroup.children as SkillNode[]}
+          animateFirstLevel={true}
+          level={1}
+        />
       )}
     </div>
   );

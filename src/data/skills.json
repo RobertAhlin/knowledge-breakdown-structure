@@ -14,7 +14,7 @@
                 "info": [
                 { "text": "IT-Högskolan Stockholm - Webbutveckling med React" },
                 { "text": "LinkedIn Learning - React.js Essential Training" },
-                { "Text": "Fullstack Utveckling på Företagsuniversitetet" }
+                { "text": "Fullstack Utveckling på Företagsuniversitetet" }
                 ] },
             { "title": "Next.js" },
             { "title": "Angular" },
