@@ -5,15 +5,35 @@
         {
           "title": "Frontend",
           "children": [
-            { "title": "React" },
+            { "title": "HTML",
+            "info": [
+              { "text": "Började med HTML i mitten på 90-talet. Har under åren hängt med fram till idag med HTML5" },
+              { "text": "Här kommer nästa rad med lite lorem ipsum." }
+            ] },
+            { "title": "React",
+                "info": [
+                { "text": "IT-Högskolan Stockholm - Webbutveckling med React" },
+                { "text": "LinkedIn Learning - React.js Essential Training" },
+                { "Text": "Fullstack Utveckling på Företagsuniversitetet" }
+                ] },
+            { "title": "Next.js" },
+            { "title": "Angular" },
             { "title": "TypeScript" },
-            {
-              "title": "CSS",
+            { "title": "JavaScript" },
+            { "title": "CSS",
               "children": [
                 { "title": "Tailwind" },
-                { "title": "Flexbox & Grid" }
+                { "title": "Bootstrap" },
+                { "title": "Flexbox & Grid" },
+                { "title": "SASS" },
+                { "title": "Styled Components" }
               ]
-            }
+            },
+            { "title": "UX",
+                "info": [
+                { "text": "LinkedIn Learning - UX Foundations - Interaction Design" },
+                { "text": "UX och tillgänglighet för utvecklare, Medieinstitutet" }
+                ] }
           ]
         },
         {
@@ -21,7 +41,18 @@
           "children": [
             { "title": "Node.js" },
             { "title": "Express" },
-            { "title": "Prisma" }
+            { "title": "Prisma" },
+            { "title": ".Net",
+                "info": [
+                { "text": "LinkedIn Learning - .NET Development for Beginners" },
+                { "text": "LinkedIn Learning - BackEnd Web Development with .NET" },
+                { "text": "LinkedIn Learning - FrontEnd Web Development with .NET" }
+                ] },
+            { "title": "Docker",
+                "info": [
+                { "text": "LinkedIn Learning - Learning Docker" },
+                { "text": "Företagsuniversitetet Fullstack utveckling - Backend" }
+                ] }
           ]
         },
         {
@@ -29,44 +60,128 @@
           "children": [
             { "title": "PostgreSQL" },
             { "title": "Firebase" },
+            { "title": "SQLite" },
+            { "title": "MySQL" },
+            { "title": "NoSQL" },
             { "title": "Redis" }
           ]
+        },
+        {
+            "title": "Hårdvara",
+            "children": [
+              { "title": "Installation av datorer, servrar, nätverk",
+                "info": [
+                { "text": "Akademiska meriter från Blekinge tekniska högskola" },
+                { "text": "Nätverksteknik" },
+                { "text": "Webbteknologier" }
+                ] },
+              { "title": "Kunskap om elektronik, kablage, signaler" },
+              { "title": "Underhåll av tekniska system" }
+            ]
+        },
+        {
+            "title": "Mjukvara",
+            "children": [
+              { "title": "Excel",
+                "info": [
+                { "text": "Självlärd och mycket duktig med VBA" },
+                { "text": "LinkedIn Learning - Excel Essential Training Office 365" },
+                { "text": "Webbteknologier" }
+                ] },
+              { "title": "Kunskap om elektronik, kablage, signaler" },
+              { "title": "Underhåll av tekniska system" }
+            ]
+        },
+        {
+            "title": "Händig",
+            "children": [
+              { "title": "Snickeri, bygg, renovering" },
+              { "title": "Enklare fordonsteknik" },
+              { "title": "Lödning och montering" }
+            ]
+        }
+        ,
+        {
+            "title": "Tekniskt tänkande",
+            "children": [
+              { "title": "Problemlösning" },
+              { "title": "Logiskt resonemang" },
+              { "title": "Systemförståelse" }
+            ]
         }
       ]
     },
+
     {
       "title": "Informationssäkerhet",
       "children": [
-        { "title": "ISO 27000",
+        { "title": "Informationssäkerhet",
         "children": [
           { "title": "ISO 27001" },
           { "title": "ISO 27002" },
-          { "title": "ISO 27005" }
+          { "title": "ISO 27005" },
+          { "title": "CISM",
+            "info":[
+                { "text": "LinkedIn Learning - Certified Information Security Manager CISM Cert Prep 2022" }
+            ] }
         ]},
         {
-          "title": "Säker applikationscykel",
+          "title": "Säkra applikationer",
           "children": [
             { "title": "SAST" },
             { "title": "SCA" },
             { "title": "CI/CD security" },
-            { "title": "Något mer" }
+            { "title": "OWASP" },
+            { "title": "Threat modeling" }
           ]
         },
-        { "title": "Penetrationstest" }
+        {
+          "title": "Säkerhetstester",
+          "children": [
+            { "title": "Penetrationstester" },
+            { "title": "Sårbarhetsskanning" },
+            { "title": "Social engineering" }
+          ]
+        },
+        {
+          "title": "Kryptografi",
+          "children": [
+            { "title": "Symmetrisk och asymmetrisk kryptering" },
+            { "title": "Hashning" },
+            { "title": "Digitala signaturer" }
+          ]
+        }
       ]
     },
     {
       "title": "Projektledning",
       "children": [
         {
-          "title": "Scrum & Kanban",
+            "title": "Ledarskap",
+                "info": [
+                { "text": "Akademiska meriter vid Linnéuniversitetet" },
+                { "text": "Organisationsteori, ledarskap och motivation" }
+                ]
+        },
+        {
+          "title": "Agila metoder",
           "children": [
-            { "title": "Jira" },
-            { "title": "Sprint Planning" }
+            { "title": "Scrum" },
+            { "title": "Kanban" }
           ]
         },
-        { "title": "Förändringsledning" },
-        { "title": "E-learningplattformar" }
+        { "title": "Förändringsledning",
+        "children": [
+          { "title": "ADKAR" },
+          { "title": "Förändringsresan" }
+        ] 
+        },
+        { "title": "E-learningplattformar",
+        "children": [
+          { "title": "Miro" },
+          { "title": "Canvas" }
+        ]
+        }
       ]
     },
     {
@@ -75,12 +190,48 @@
         {
           "title": "Video- & ljudproduktion",
           "children": [
-            { "title": "Adobe Premiere" },
+            { "title": "Adobe Premiere",
+            "info": [
+            { "text": "Videoredigering och rörlig bild" }
+        ] },
             { "title": "Cubase" }
           ]
         },
-        { "title": "3D-modellering" },
-        { "title": "AI-genererad media" }
+        { "title": "3D-modellering",
+            "info": [
+            { "text": "Akademiska meriter vid Högskolan i Gävle" },
+            { "text": "3D-modellering och animation i Open Source-miljö (Blender)." }
+        ] 
+        },
+        { "title": "AI-genererad media" },
+        { "title": "Språk",
+            "children": [
+            { "title": "Svenska",
+            "info": [
+            { "text": "Modersmål" }
+            ] 
+        },
+            { "title": "Engelska",
+            "info": [
+            { "text": "Mycket god i både tal och skrift." }
+            ]  },
+            { "title": "Tyska",
+            "info": [
+            { "text": "Skoltyska från högstadiet. Förstår men kan ej prata så mycket." }
+            ]   },
+            { "title": "Serbokroatiska",
+            "info": [
+            { "text": "Låg kunskap. Självlärd genom umgänge. Kan beställa mat med mera." }
+            ]   },
+            { "title": "Franska",
+            "info": [
+            { "text": "Låg kunskap. Försöker självlära mig genom Duolingo." }
+            ]   },
+            { "title": "Teckenspråk som stöd",
+            "info": [
+            { "text": "Låg kusnkap. Gått endagarskurs plus använder en app." }
+            ]   }
+        ] }
       ]
     }
   ]

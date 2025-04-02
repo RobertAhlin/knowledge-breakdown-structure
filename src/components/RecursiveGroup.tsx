@@ -1,11 +1,16 @@
 // src/components/RecursiveGroup.tsx
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import "./RecursiveGroup.css";
+
+// Typdefinition
+type Info = {
+  text: string;
+};
 
 type Group = {
   title: string;
   children?: Group[];
+  info?: Info[];
 };
 
 type Props = {
@@ -14,42 +19,55 @@ type Props = {
 
 export default function RecursiveGroup({ groups }: Props) {
   const [selected, setSelected] = useState<string | null>(null);
+  const [modalContent, setModalContent] = useState<Info[] | null>(null);
 
   return (
     <div className="column">
       {groups.map((group) => {
         const isSelected = group.title === selected;
+        const hasInfo = group.info && group.info.length > 0;
+
+        const handleClick = () => {
+          if (hasInfo) {
+            setModalContent(group.info!);
+          } else {
+            setSelected(isSelected ? null : group.title);
+          }
+        };
+
         return (
           <div key={group.title} className="group-block">
-            <motion.div
+            <div
               className={`group-card ${isSelected ? "selected" : ""}`}
-              onClick={() => setSelected(isSelected ? null : group.title)}
-              layout
-              animate={{
-                scale: isSelected ? 1.05 : 1,
-                padding: isSelected ? "1.5rem 2rem" : "1rem 1.5rem"
-              }}
-              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              onClick={handleClick}
             >
               {group.title}
-            </motion.div>
+            </div>
 
-            <AnimatePresence initial={false}>
-              {isSelected && group.children && (
-                <motion.div
-                  className="child-wrapper"
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <RecursiveGroup groups={group.children} />
-                </motion.div>
-              )}
-            </AnimatePresence>
+            {!hasInfo && isSelected && group.children && (
+              <div className="child-wrapper">
+                <RecursiveGroup groups={group.children} />
+              </div>
+            )}
           </div>
         );
       })}
+
+      {modalContent && (
+        <div className="modal-overlay" onClick={() => setModalContent(null)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <button className="close-button" onClick={() => setModalContent(null)}>
+              &times;
+            </button>
+            <h3>Info</h3>
+            <ul>
+              {modalContent.map((item, index) => (
+                <li key={index}>{item.text}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
