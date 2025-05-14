@@ -7,41 +7,78 @@
           "children": [
             { "title": "HTML",
             "info": [
-              { "text": "Började med HTML i mitten på 90-talet. Har under åren hängt med fram till idag med HTML5" },
-              { "text": "Här kommer nästa rad med lite lorem ipsum." }
+              { "text": "Började med HTML i mitten på 90-talet. Har under åren hängt med fram till idag med HTML5." },
+              { "text": "Läste Multimedia och Webbteknik 2000-2001." },
+              { "text": "Läste Webbteknologier 7,5 hp på Blekinge tekniska högskola 2017." }
             ] },
             { "title": "React",
                 "info": [
-                { "text": "IT-Högskolan Stockholm - Webbutveckling med React" },
-                { "text": "LinkedIn Learning - React.js Essential Training" },
-                { "text": "Fullstack Utveckling på Företagsuniversitetet" }
+                { "text": "Kunskap via studier på IT-Högskolan Stockholm - Webbutveckling med React 2024." },
+                { "text": "LinkedIn Learning - React.js Essential Training 2023" },
+                { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
                 ] },
-            { "title": "Next.js" },
-            { "title": "Angular" },
-            { "title": "TypeScript" },
-            { "title": "JavaScript" },
+            { "title": "Next.js",
+                "info":[
+                { "text": "Kunskap via studier på Code Institute - Fullstack-utveckling 2023" }
+                ] },
+            { "title": "Angular",
+                "info": [
+                { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet  2023-2025" }
+                ] },
+            { "title": "TypeScript",
+                "info": [
+                { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" },
+                { "text": "Självstudier bland annat via www.totaltypescript.com" }
+                ] },
+            { "title": "JavaScript",
+                "info": [
+                { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" },
+                { "text": "Kunskap via studier som Fullstack-utvecklare på Code Institute 2023" },
+                { "text": "Självlärd" }
+                ] },
             { "title": "CSS",
-              "children": [
-                { "title": "Tailwind" },
-                { "title": "Bootstrap" },
-                { "title": "Flexbox & Grid" },
+              "children": [ 
+                { "title": "CSS3",
+                "info": [
+                  { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" },
+                { "text": "Kunskap via studier som Fullstack-utvecklare på Code Institute 2023" },
+                { "text": "CSS i allmänhet använder jag varje gång jag gör en webbsida."}
+                ]},
+                { "title": "Bootstrap4",
+                "info": [
+                { "text": "Kunskap via studier på Code Institute - Fullstack-utveckling 2023"}
+                ] },
+                { "title": "Flexbox & Grid",
+                "info": [
+                { "text": "Kunskap via studier på Code Institute - Fullstack-utveckling 2023"},
+                { "text": "Självlärd"}
+                ]  },
                 { "title": "SASS" },
                 { "title": "Styled Components" }
               ]
             },
             { "title": "UX",
                 "info": [
-                { "text": "LinkedIn Learning - UX Foundations - Interaction Design" },
-                { "text": "UX och tillgänglighet för utvecklare, Medieinstitutet" }
+                { "text": "LinkedIn Learning - UX Foundations - Interaction Design 2023" },
+                { "text": "UX och tillgänglighet för utvecklare, Medieinstitutet 2023" }
                 ] }
           ]
         },
         {
           "title": "Backend",
           "children": [
-            { "title": "Node.js" },
-            { "title": "Express" },
-            { "title": "Prisma" },
+            { "title": "Node.js",
+            "info": [
+              { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
+            ] },
+            { "title": "Express",
+            "info": [
+              { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
+            ] },
+            { "title": "Prisma",
+            "info": [
+              { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
+            ] },
             { "title": ".Net",
                 "info": [
                 { "text": "LinkedIn Learning - .NET Development for Beginners" },
@@ -51,24 +88,46 @@
             { "title": "Docker",
                 "info": [
                 { "text": "LinkedIn Learning - Learning Docker" },
-                { "text": "Företagsuniversitetet Fullstack utveckling - Backend" }
+                { "text": "Kunskap via studier på Företagsuniversitetet - Fullstack-utveckling - Backend 2023-2025" }
                 ] },
             { "title": "Python",
                 "info": [
                 { "text": "LinkedIn Learning - Python Essential Training" },
-                { "text": "Code Institute - AI/ML with Python" }
+                { "text": "Kunskap via studier på Code Institute - Fullstack-utveckling - AI/ML with Python 2023" }
                 ] }    
           ]
         },
         {
           "title": "Databaser",
           "children": [
-            { "title": "PostgreSQL" },
-            { "title": "Firebase" },
-            { "title": "SQLite" },
-            { "title": "MySQL" },
-            { "title": "NoSQL" },
-            { "title": "Redis" }
+            { "title": "MS SQL",
+            "info": [
+              { "text": "Kunskap via yrkeserfarenhet i Kardex Sverige AB 2016-2021. Genom installation och konfigurering för installation av mjukvara." }
+            ]  },
+            { "title": "PostgreSQL",
+            "info": [
+              { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
+            ]  },
+            { "title": "Firebase",
+            "info": [
+              { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
+            ]  },
+            { "title": "SQLite",
+            "info": [
+              { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
+            ]  },
+            { "title": "MySQL",
+            "info": [
+              { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
+            ]  },
+            { "title": "NoSQL",
+            "info": [
+              { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
+            ]  },
+            { "title": "Redis",
+            "info": [
+              { "text": "Kunskap via studier som Fullstack-utvecklare på Företagsuniversitetet 2023-2025" }
+            ]  }
           ]
         },
         {
@@ -76,9 +135,7 @@
             "children": [
               { "title": "Installation av datorer, servrar, nätverk",
                 "info": [
-                { "text": "Akademiska meriter från Blekinge tekniska högskola" },
-                { "text": "Nätverksteknik" },
-                { "text": "Webbteknologier" }
+                { "text": "Akademiska meriter från Blekinge tekniska högskola i kursera Nätverksteknik och Webbteknologier" }
                 ] },
               { "title": "Kunskap om elektronik, kablage, signaler" },
               { "title": "Underhåll av tekniska system" }
@@ -90,8 +147,7 @@
               { "title": "Excel",
                 "info": [
                 { "text": "Självlärd och mycket duktig med VBA" },
-                { "text": "LinkedIn Learning - Excel Essential Training Office 365" },
-                { "text": "Webbteknologier" }
+                { "text": "LinkedIn Learning - Excel Essential Training Office 365" }
                 ] },
               { "title": "Kunskap om elektronik, kablage, signaler" },
               { "title": "Underhåll av tekniska system" }
@@ -100,8 +156,16 @@
         {
             "title": "Händig",
             "children": [
-              { "title": "Snickeri, bygg, renovering" },
-              { "title": "Enklare fordonsteknik" },
+              { "title": "Snickeri, bygg, renovering",
+              "info": [
+              { "text": "Snickrat ända sedan lite med diverse trähyddor" },
+              { "text": "Har själv byggt om och till i två olika hus. Inkluderar två kök, vardagsrum, flera sovrum, badrum, altaner, entrétrappor, med mera." }
+              ] },
+              { "title": "Enklare fordonsteknik",
+              "info": [
+              { "text": "Vet hur en motor fungerar." },
+              { "text": "Har bytt avgassystem, fjädrar, el, lagat rost, service och massa annat." }
+              ] },
               { "title": "Lödning och montering" }
             ]
         }
@@ -171,14 +235,26 @@
         {
           "title": "Agila metoder",
           "children": [
-            { "title": "Scrum" },
-            { "title": "Kanban" }
+            { "title": "Scrum",
+            "info": [
+              { "text": "Kunskap via studier som Agil projektledare på IHM Business School 2021-2023" }
+            ] },
+            { "title": "Kanban",
+            "info": [
+              { "text": "Kunskap via studier som Agil projektledare på IHM Business School 2021-2023" }
+            ] }
           ]
         },
         { "title": "Förändringsledning",
         "children": [
-          { "title": "ADKAR" },
-          { "title": "Förändringsresan" }
+          { "title": "ADKAR",
+            "info": [
+              { "text": "Kunskap via studier som Agil projektledare på IHM Business School 2021-2023" }
+            ] },
+          { "title": "Förändringsresan",
+            "info": [
+              { "text": "Kunskap via studier som Agil projektledare på IHM Business School 2021-2023" }
+            ] }
         ] 
         },
         { "title": "E-learningplattformar",
@@ -197,9 +273,21 @@
           "children": [
             { "title": "Adobe Premiere",
             "info": [
-            { "text": "Videoredigering och rörlig bild" }
+            { "text": "Självlärd - Började runt 2000 att använda det för eget bruk." }
+            { "text": "Läste Multimedia och Webbteknik 2000-2001." },
+            { "text": "Läste Videoredigering och rörlig bild på Jönköpings Universitet 2016-2017" },
+            { "text": "Kunskap via yrkeserfarenhet i i4 Solutions AB vid framtagande av digitala kurser till Företagsuniversitet" }
         ] },
-            { "title": "Cubase" }
+          { "title": "OBS Studio",
+            "info": [
+            { "text": "Självlärd." },
+            { "text": "Kunskap via yrkeserfarenhet i i4 Solutions AB vid framtagande av digitala kurser till Företagsuniversitet" }
+        ] },
+            { "title": "Cubase",
+            "info": [
+              { "text": "Självlärd. Byggde egen studio hemma där jag spelade in band." },
+              { "text": "Kunskap via yrkeserfarenhet i Studiefrämjandet då jag hoppade in som studiotekniker vid behov 2009-2012." }
+            ] }
           ]
         },
         { "title": "3D-modellering",
@@ -226,15 +314,15 @@
             ]   },
             { "title": "Serbokroatiska",
             "info": [
-            { "text": "Låg kunskap. Självlärd genom umgänge. Kan beställa mat med mera." }
+            { "text": "Meningar och fraser. Självlärd genom umgänge. Kan beställa mat med mera." }
             ]   },
             { "title": "Franska",
             "info": [
-            { "text": "Låg kunskap. Försöker självlära mig genom Duolingo." }
+            { "text": "Enstaka ord och fraser. Försöker självlära mig genom Duolingo." }
             ]   },
             { "title": "Teckenspråk som stöd",
             "info": [
-            { "text": "Låg kusnkap. Gått endagarskurs plus använder en app." }
+            { "text": "Enstaka ord och fraser. Gått endagarskurs plus använder en app." }
             ]   }
         ] }
       ]
